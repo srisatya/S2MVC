@@ -1,0 +1,76 @@
+ <?php
+ if(isset($this->leftmenu))
+ {
+   foreach($this->leftmenu as $key=>$lmenu)
+   {
+   if($key == 0)
+   {   
+	   if($lmenu['level'] == 1)
+	   {
+	  ?>
+	 
+	 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="<?php echo $lmenu['icon'];?>"></i><span class="hide-menu"><?php echo $lmenu['lang'];?> </span></a>
+			<ul aria-expanded="false" class="collapse">
+									                              
+									
+			
+
+		<?php
+
+	   }else if($lmenu['level'] == 2)
+	   {
+	   ?>
+	   <li><a href="<?php echo $lmenu['link'];?>"><?php echo $lmenu['lang'];?></a></li> 
+	   <?php
+	   }
+	
+	}else if($key == count($this->leftmenu) - 1)
+	{
+	   if($lmenu['level'] == 1)
+	   {
+	   ?>
+	   <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="<?php echo $lmenu['icon'];?>"></i><span class="hide-menu"><?php echo $lmenu['lang'];?> </span></a>
+			<ul aria-expanded="false" class="collapse">
+			</ul>
+	   </li>
+			
+	   <?php
+	   
+	   }else if($lmenu['level'] == 2)
+	   {
+	    ?>
+		<li><a href="<?php echo $lmenu['link'];?>"><?php echo $lmenu['lang'];?></a></li> 
+		</ul>
+	   </li>
+		<?php
+	   }
+	
+	}	
+	else
+	{
+	
+	  if($lmenu['level'] == 1)
+	  {
+	?>
+		</ul>
+	</li>
+	
+	 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="<?php echo $lmenu['icon'];?>"></i><span class="hide-menu"><?php echo $lmenu['lang'];?> </span></a>
+			<ul aria-expanded="false" class="collapse">
+	
+	
+	<?php
+	  }else if($lmenu['level'] == 2)
+	  {
+	  ?>
+	  <li><a href="<?php echo $lmenu['link'];?>"><?php echo $lmenu['lang'];?></a></li> 
+	  <?php
+	  
+	  }
+	
+	}
+
+	}
+	
+}	
+	?>

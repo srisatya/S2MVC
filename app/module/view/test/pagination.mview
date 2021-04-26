@@ -1,0 +1,23 @@
+<table class="responsive">
+<thead>
+<tr><td>ID</td><td>Nama</td><td>FLAG ICON</td></tr>
+</thead>
+<tbody>
+<?php
+if(isset($this->bas))
+{
+//count($this->bas);
+  foreach($this->bas as $bas)
+  {
+  //echo $bas;
+   echo "<tr><td>".$bas['id']."</td><td>".$bas['name']."</td><td>".$bas['flag']."</td></tr>";
+  }
+}
+?>
+
+
+
+</tbody>
+</table>
+
+
