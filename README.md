@@ -1,43 +1,34 @@
 # S2MVC
-PHP OOP Webframework from s2team
+## PHP OOP Webframework from s2team
 
-PHP BASED
+## PHP BASED
 
-OOP (Object Oriented Programming)
-MVC Concept (Model, View, Controller)
-FRAMEWRK STRUCTURE
+### OOP (Object Oriented Programming)
+### MVC Concept (Model, View, Controller)
 
-APP
-a. core
+## FRAMEWORK STRUCTURE
 
-b. controller
-
-c. view (.mview)
-
-d. data
-
-  - lang      
-  - config.inc
-e. Theme (.mview)
-
-f. vendor
-
-g. module
-
+- APP
+  - core
   - controller
-  - model
-  - view
-  - lang
-PUBLIC
-a. .htaccess
+  - view (.mview)
+  - data
+    - lang  
+    - config.inc
+  - Theme (.mview)
+  - vendor
 
-b. index.php
-
-c. css
-
-d. js
-
+  - module
+    - controller
+    - model
+    - view
+    - lang
+       
+- PUBLIC
+  - .htaccess
+  - index.php
+  - css
+  - js
   - libs
   - modules
-  
-e. images
+  - images
